@@ -67,6 +67,10 @@
   <body>
   <div id="wrap">
     <div class="container">
+      <%if flash[:small_id].present? %>
+        <p class="shortened-link">
+          The shortened URL is available <%= link_to 'here', url_url(flash[:small_id]) %>. Right click to copy and share it!</p>
+      <% end %> 
        <%= yield %>
     </div>
     

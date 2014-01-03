@@ -1,8 +1,7 @@
 Stubbify::Application.routes.draw do
-  get "generator/home"
-  resources :generator
-
-  root "generator#home"
+ # root "generator#home"
+  resources :generator, :urls, :only => [:show, :new, :create]
+  root :to => redirect('/urls/new')
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
