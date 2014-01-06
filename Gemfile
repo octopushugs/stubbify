@@ -1,5 +1,8 @@
 source 'https://rubygems.org'
 
+#For protected attributes
+gem 'protected_attributes'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 
